@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/desafio%20dio.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Desafio Dio!!</title>
+</head>
+<body>
+    <h1><font color="red">Stranger Things</font></h1>
+    <hr>
+
+    <h2>Sobre a serie</h2>
+    <p>Uma das <strong>séries mais populares</strong> da <abbr title="Netflix and Chill">Netflix</abbr>, Stranger Things se passa nos anos <mark>80</mark> na cidade fictícia de Hawkins.</p>
+
+    <h3>Personagens Principais</h3>
+    <ul>
+        <li><i>Elven</i> - Garota com poderes mentai</li>
+        <li><u>Mike Wheeler</u> - Lider do grupo de amigos</li>
+        <li> Will Byers - O garoto que desaperece</li>
+        <li>Dustin Henderson - O genio do grupo</li>
+    </ul>
+
+    <h4>Temporadas</h4>
+    <ol>
+        <li>Temporada 1 - O desapericimento de Will</li>
+        <li>Temporada 2 - A ameaça do Mind Flayer</li>
+        <li>Temporada 3 - O shopping Startcout</li>
+        <li>Temporada 4 - Vecna</li>
+    </ol>
+
+    <h5>Curiosidades</h5>
+    <p>A serie sepassa em 198<sub>3</sub>, e teve mais de 1.2<sup>9</sup> bilhões de horas assistidas! </p>
+
+    <h6>Citação Famosa</h6>
+    <blockquote>
+        'Friends don't lie' - Eleven
+    </blockquote>
+
+    <p>Para mais informações sobre a série, visite o <a href="https://www.netflix.com/br/title/80057281">Site sobre a serie</a>.</p>
+
+    <hr>
+    <p><small>Desenvolvimento foi feito por <abbr title="Gustavo Matias Silva">matiissjr</abbr></small></p>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
